@@ -1,8 +1,8 @@
 tasks = []
 
 def add_task(task):
-    tasks.append(task)
-    print(f"✅ Added : {task}")
+    tasks.append(task.upper())
+    print(f"✅ Added (uppercase): {task}")
 
 def show_tasks():
     print("\n📋 current Tasks : ")
