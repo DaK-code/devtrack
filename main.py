@@ -1,8 +1,11 @@
 tasks = []
 
-def add_task(task):
-    tasks.append(task.upper())
-    print(f"✅ Added (uppercase): {task}")
+
+def add_task(task, priority = "Normal"):
+    task = task.upper()
+    tasks.append(f"{task} ({priority})")
+    print(f"✅ Added (uppercase) : {task} with priority {priority}")
+
 
 def show_tasks():
     print("\n📋 current Tasks : ")
